@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Overpass;
+    src: url(../font/Overpass.ttf);
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Overpass;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(213, 19%, 12%));
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container-body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.body {
+    color: hsl(217, 12%, 63%);
+    font-size: 12px;
+}
+
+.rating {
+    display: flex;
+    margin-bottom: 25px;
+}
+input[type="radio"] {
+    visibility: hidden;
+    flex: 1;
+    text-align: center;
+}
+.rate-1::after {
+    content: "1";
+}
+.rate-2::after {
+    content: "2";
+}
+.rate-3::after {
+    content: "3";
+}
+.rate-4::after {
+    content: "4";
+}
+.rate-5::after {
+    content: "5";
+}
+.active::after {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+input::after {
+    cursor: pointer;
+    background: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    visibility: visible;
+    justify-content: center;
+}
+input:hover::after {
+    background: hsl(217, 12%, 63%);
+    color: white;
+}
+
+
+.star img
+{
+    background: hsl(219, 19%, 23%);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    color: white;
+    letter-spacing: 1px;
+}
+.submit-button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    display: block;
+    width: 100%; 
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.result-rating {
+    color: hsl(25, 97%, 53%);
+    border-radius: 15px;
+    max-width: fit-content;
+    background: hsl(219, 19%, 23%);
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+.hide {
+    display: none;
+}
