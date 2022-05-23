@@ -9,11 +9,10 @@
     <script src="./resources/javascript/app.js"></script>
 </head>
 <body>
-    <!-- Rating state start -->
     <main class="container">
         <div class="rating-form">
             <div class="star">
-                <img src="./images/icon-star.svg">
+                <img src="./images/icon-star.svg" alt="header icon">
             </div>
             <div class="container-body">
                 <div class="title">
@@ -23,26 +22,24 @@
                     Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
                 </div>
                 <div class="rating">
-                    <input type="radio" id="rating-val" class="rate-1" name="rating" value="1" onclick="handleRating(this)">
-                    <input type="radio" id="rating-val" class="rate-2" name="rating" value="2" onclick="handleRating(this)">
-                    <input type="radio" id="rating-val" class="rate-3" name="rating" value="3" onclick="handleRating(this)">
-                    <input type="radio" id="rating-val" class="rate-4" name="rating" value="4" onclick="handleRating(this)">
-                    <input type="radio" id="rating-val" class="rate-5" name="rating" value="5" onclick="handleRating(this)">
+                    <input type="radio" id="rating-1" class="rate-1" name="rating" value="1" onclick="handleRating(this)">
+                    <input type="radio" id="rating-2" class="rate-2" name="rating" value="2" onclick="handleRating(this)">
+                    <input type="radio" id="rating-3" class="rate-3" name="rating" value="3" onclick="handleRating(this)">
+                    <input type="radio" id="rating-4" class="rate-4" name="rating" value="4" onclick="handleRating(this)">
+                    <input type="radio" id="rating-5" class="rate-5" name="rating" value="5" onclick="handleRating(this)">
                 </div>
             </div>
-            <footer>
+            <div>
                 <button class="submit-button" onclick="submitRating()">
                     SUBMIT
                 </button>
-            </footer>
+            </div>
         </div>
         <div class="result hide">
             <div class="result-illustration">
                 <img src="./images/illustration-thank-you.svg" alt="thank you">
             </div>
-            <div class="result-rating">
-                You selected <!-- Add rating here --> out of 5
-            </div>
+            <div class="result-rating"></div>
             <div class="title">
                 Thank you!
             </div>
@@ -52,9 +49,9 @@
         </div>
         
     </main>
-    <div class="attribution">
+    <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Siddharth Patel</a>.
-    </div>
+    </footer>
 </body>
 </html>
